@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="about-section">
+            <div class="logo">
+                <i class="fa-solid fa-car"></i>
+                <div class="text">
+                    <h2>Car</h2>
+                    <h3>Rental</h3>
+                </div>
+            </div>
+            <ul class="navi" id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="vehicle.html">Vehicle Models</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <a href="#" id="close"><i class="fa-solid fa-x"></i></a>
+            </ul>
+            <div class="sign">
+                <a href="#">Sign In</a>
+                <button>Register</button>
+            </div>
+            <div id="mobile">
+                <i id="bar" class="fas fa-outdent"></i>
+            </div>
+        </header>
+    <div class="front-p">
+        <div class="left">
+        <h2>Save <span>money</span> with our deals and offers.</h2>
+        <p>Rent your dream car from us now for unlimited miles,and much more.</p>
+        <div class="buttons">
+            <button class="book">Book a Ride <i class="fa-solid fa-circle-check"></i></button>
+        <button class="learn">Learn More <i class="fa-solid fa-circle-chevron-right"></i></button>
+        </div>
+        
+    </div>
+        <div class="right">
+            <img src="img/bg.png" alt="">
+        </div>
+    </div>
+    </div>
+    <div class="book">
+        <div class="hero">
+            <h2>Book a car <i class="fa-solid fa-car-side"></i></h2>
+            <div class="containers">
+                <div class="box">
+                    <h3><i class="fa-solid fa-car-side"></i> Select your car type</h3>
+                    <select required>
+                        <option>Select your car type</option>
+                        <option>Audi a7</option>
+                        <option>Audi S6</option>
+                        <option>Golf 7</option>
+                        <option>Jaguar XE</option>
+                        <option>Jaguar F-Pace</option>
+                        
+                    </select>
+                </div>
+                <div class="box">
+                    <h3><i class="fa-solid fa-location-dot"></i> Select your pick-up location</h3>
+                    <select required>
+                        <option>Select your pick-up location</option>
+                        <option>Dublin</option>
+                        <option>Naas</option>
+                        <option>Kildare</option>
+                        <option>Cork</option>
+                        <option>Galway</option>
+                        
+                    </select>
+                </div>
+                <div class="box">
+                    <h3><i class="fa-solid fa-location-dot"></i> Select your drop-off location</h3>
+                    <select required>
+                        <option>Select your drop-off location</option>
+                        <option>Dublin</option>
+                        <option>Naas</option>
+                        <option>Kildare</option>
+                        <option>Cork</option>
+                        <option>Galway</option>
+                        
+                    </select>
+                </div>
+               
+            </div>
+            <div class="containers bottom">
+                <div class="calendar">
+                    <h3><i class="fa-regular fa-calendar-days"></i> Pick-up</h3>
+                    <input type="date" required>
+                </div>
+                <div class="calendar">
+                    <h3><i class="fa-regular fa-calendar-days"></i> Drop-off</h3>
+                    <input type="date" required>
+                </div>
+                <button type="submit">Search</button>
+            </div>
+ 
+
+        </div>
+    </div>
+    <div class="plan">
+        <h1>Quick and Easy Car Rental</h1>
+        <div class="sm-box">
+            <div class="trip">
+            <img src="img/sma.png">
+            <h2>24h Service</h2>
+            <p>You can contact us at any time if you have any questions or if something has happened with the car.</p>
+        </div>
+        <div class="trip">
+            <img src="img/small-img2.png">
+            <h2>Our Cars</h2>
+            <p>Since you hit the road when have you covered with a range of cars.</p>
+        </div>
+        <div class="trip">
+            <img src="img/small-img.png">
+            <h2>Select a car</h2>
+            <p>We have a range of cars in witch you can choose any of them, that one that best fits your needs.</p>
+        </div>
+        </div>
+        
+    </div>
+
+    <div class="vehicle">
+        <h4>Vehicle Models</h4>
+        <h3>Our Rental Fleet</h3>
+        <div class="b-box">
+            <div class="button">
+                <button onclick="changeImage('img/audi rs7.png'), changeText()" class="change">Audi A7</button>
+                <button onclick="changeImage('img/audi s6.png'), changeText1()"  class="change">Audi S6</button>
+                <button onclick="changeImage('img/golf7.png'), changeText2()" class="change">Golf 7</button>
+                <button onclick="changeImage('img/Jaguar.png'), changeText3()" class="change">Jaguar XE</button>
+                <button onclick="changeImage('img/j jeep.png'), changeText4()" class="change">Jaguar F-Pace</button>
+                <button onclick="changeImage('img/E Class.png'), changeText5()" class="change">Mercedes E-Class</button>
+                <button onclick="changeImage('img/superb.png'), changeText6()" class="change">Skoda Superb</button>
+                <button onclick="changeImage('img/xc90.png'), changeText7()" class="change">Volvo Xc90</button>
+                <button onclick="changeImage('img/ford Fiesta.png'), changeText8()" class="change">Ford Fiesta ST</button>          
+            </div>
+            <img src="img/audi rs7.png" id="img">
+            <div class="tables">
+                <table>
+                <thead>
+                    <div class="name">
+                         <h2 class="con7">Audi A7 / 50$ per day</h2>
+                    </div>
+                   
+                </thead>
+                <tbody>
+                    <tr class="row">
+                        <td class="td">Model</td>
+                        <td class="con">Rs7</td>
+                    </tr>
+                    <tr class="row">
+                        <td class="td">Mark</td>
+                        <td class="con1">Audi</td>
+                    </tr>
+                    <tr class="row">
+                        <td class="td">Year</td>
+                        <td class="con2">2015</td>
+                    </tr>
+                    <tr class="row">
+                        <td class="td">Doors</td>
+                        <td class="con3">5</td>
+                    </tr>
+                    <tr class="row">
+                        <td class="td">Ac</td>
+                        <td class="con4">Yes</td>
+                    </tr>
+                    <tr class="row">
+                        <td class="td">Transmission</td>
+                        <td class="con5">Automatic</td>
+                    </tr>
+                    <tr class="row">
+                        <td class="td">Fuel</td>
+                        <td class="con6">Petrol</td>
+                    </tr>
+
+                </tbody>
+            </table>
+            </div>
+            
+        </div>
+    </div>
+    <div class="save">
+        <h2>Save <span>money</span> with our deals and offers.</h2>
+        <p>We are here 24/7 for you.Local maintenance.</p>
+    </div>
+
+    <div class="choose-us">
+        <div class="porsche">
+           <img src="img/porsche.png">
+        </div>
+        <div class="choose">
+            <div class="choose-bbox">
+                <h4>Why choose us?</h4>
+                <h2>We have the best deals on the market</h2>
+                <p>We are a car rental with a decent car fleet that are premium cars.After every use of a car it goes into an inspection to make sure that nothing is wrong with the car and the customer is happy with it.After that the car is being vacumed and washed.We have a very flexible car rental services due to its pick up location and drop-off location and many more.</p>
+            <button>More Details <i class="fa-solid fa-circle-chevron-right"></i></button>
+            </div>
+            <div class="choose-sbox">
+                <div class="smbox">
+                    <img src="img/choose1.png" alt="">
+                    <div class="text">
+                        <h3>Drive anywhere you want</h3>
+                    <p>Due to our flexible services you can drive anywhere you want as long as you don't cause any damage to the car and the car returns back.</p>
+                    </div>
+                    </div>
+                <div class="smbox">
+                    <img src="img/choose2.png" alt="">
+                    <div class="text">
+                        <h3>Low Prices</h3>
+                    <p>We offer one of the best prices for our cars being one of the lowest prices on the market.</p>
+                    </div>
+                    </div>
+                <div class="smbox">
+                    <img src="img/choose3.png" alt="">
+                    <div class="text">
+                        <h3>Our Transparency</h3>
+                    <p>From the begging we tell you the full price without any extras during the contract</p>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="frequently">
+        <h4>Q&A</h4>
+        <h2>Questions and answers by our customers</h2>
+        <h3>Feel free to send us any question that you might have about our rental services.</h3>
+        <ul class="accordion">
+            <li>
+                <input type="radio" name="accordion" id="first" >
+                <label for="first">How can I find your special offers?</label>
+                <div class="content">
+                    <p>You can find our special offers by following us on our social media accounts and checking our new posts and stories because that's where we announce our new offers and deals for a limited time.</p>
+
+                    </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="secound">
+                <label for="secound">How can I rent a car?</label>
+                <div class="content">
+                    <p>You can rent a car from us by coming to our location or sending us an email about what car you would like to rent.To rent a car you will need your id card and some guarantee that you will bring the car back.</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="third">
+                <label for="third">What makes this company so good?</label>
+                <div class="content">
+                    <p>What makes our company good is that we have a transparency with our customers and informing the customer everything before he rents a car from us, and that he is ensured in case an accident happens, our customer is covered.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <footer>
+        <div class="three">
+             <div class="foot-box">
+            <h2><span>CAR</span> Rental</h2>
+            <p>We offer a big range of cars that are in perfect condition and looked over,washed and checked everyday.</p>
+            <h3><i class="fa-solid fa-phone-volume"></i> [123]-456-789</h3>
+            <h3><i class="fa-regular fa-envelope"></i> carrental@gmail.com</h3>
+        </div>
+        <div class="foot-box">
+            <h1>Company</h1>
+            <h4>Los Angeles</h4>
+            <h4>Careers</h4>
+            <h4>Offers</h4>
+            <h4>Insurance</h4>
+        </div>
+        
+        </div>
+        <div class="two">
+           <div class="foot-box working">
+            <h1 class="working">Working Hours</h1>
+            <h4>Mo-Fri:10.00AM-20.00PM</h4>
+            <h4>Sat:11.00AM-18.00PM</h4>
+            <h4>Sun: Closed</h4>
+        </div>
+        <div class="foot-box last">
+            <h1 class="sub">Subscription</h1>
+            <h5>Subscribe your Email address for latest news & updates.</h5>
+            <input type="email" placeholder="Enter E-mail" required>
+            <button type="submit">Submit</button>
+        </div> 
+        </div>
+       
+    </footer>
+
+    <script src="https://kit.fontawesome.com/5111c4ecb9.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
